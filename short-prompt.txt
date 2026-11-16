@@ -1,2 +1,2 @@
-Categorize homeowner's request/issue by required service type to resolve them. Explicitly respond with the best service out of ONLY these three options: electrical, plumbing, roofing.
+Categorize homeowner's request/issue by service type to resolve it. Explicitly respond with the best singular service out of ONLY these options: electrical, plumbing, roofing.
 Query: {query}

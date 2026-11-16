@@ -1,6 +1,6 @@
 query	target_category	predicted_category
 Washing machine doesn't fill up. Basement flooded 3 days ago but its dry and no leaks.	electrical	plumbing
-electrical poles fell over after a storm. upstairs bathroom walls are leaking by the shower	plumbing	electrical and plumbing
-branch hit my shingles. garbage disposal makes loud buzzing noise and won't turn on	electrical	Roofing and plumbing.
+electrical poles fell over after a storm. upstairs bathroom walls are leaking by the shower	plumbing	electrical
+branch hit my shingles. garbage disposal makes loud buzzing noise and won't turn on	electrical	roofing
 strong blizzard piled snow on roof and near house walls. its 60 out and garage door is disabled	electrical	roofing
 roof is intact. Massive thunderstorm and water seeps in the house	plumbing	roofing
