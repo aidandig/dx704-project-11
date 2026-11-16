@@ -1,0 +1,3 @@
+Used dotenv to access .env for my API key rather than using Google Colab.
+
+No generative AI use.
