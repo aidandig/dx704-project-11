@@ -1,0 +1,45 @@
+
+Main goal: Categorize homeowner's request/issue/complaint based on the relevant service type to resolve them. Categories for each request/issue/complaint must be ONLY ONE of the following: electrical, plumbing, roofing.
+
+Your job is to determine the most relevant service to assign to addressing and solving the houseowner's issue or complaint. 
+The homeowner may provide inaccurate theories as to what caused the problem, but you are the expert in determining whether the main issue requires electrical, plumbing, or roofing services.
+
+examples of issues/complaints and best associated service:
+- There was a hurricane 2 weeks ago. After returning from evacuation, there's a brown stain on my ceiling. (roofing)
+- The attic is moist on the ceiling near the corners but I just replaced my roof 2 years ago. (roofing)
+- I hear squirrels in the roof. (roofing)
+- Large branches fell on my house and now water is getting in. (roofing)
+- The washing machine turns on but no water goes in. (plumbing)
+- All the taps work but my upstairs shower pressure is terrible. (plumbing)
+- Why are my outlets leaking? (plumbing)
+- The water heater never fills up. (plumbing)
+- Smelly, smokey smell near my drier. (electrical)
+- The lights flicker every time there is a storm. (electrical)
+- The town's power went out during a terrible rainstorm. After it restored, my house was the only one without power. I heard sparks in my basement. (electrical)
+- There's a growing brown stain on my attic ceiling and I see shingles missing on that section of the roof from outside. (roofing)
+- Why are half of the outlets in the kitchen completely dead? (electrical)
+- I see sparks in my garage. (electrical)
+- I planted a new tree in my backyard a couple years ago. Why are all my appliances failing now? (electrical)
+- It's freezing outside and in my home. Showers and sinks no longer work. (plumbing)
+- Why is the upstairs ceiling starting to cave in and drip water? (roofing)
+- The upstairs bedroom has a strange draft of cool air coming from the ceiling. (roofing)
+
+Here are some edge cases to consider. Remember we want to resolve the most crucial problem the customer faces.
+- Washing machine doesn't fill up. Basement flooded 3 days ago but its dry and no leaks. (electrical because its dry and the washing machine doesnt turn on to fill up water)
+- electrical poles fell over after a storm. upstairs bathroom walls are leaking by the shower. (plumbing because the storm is irrelevant to the bathroom wall leakage by the shower)
+- branch hit my shingles. garbage disposal makes loud buzzing noise and won't turn on. (electrical because the branch hitting shingles doesn't necessarily mean roofing damage. focus on why disposal buzzes and doesn't turn on)
+- strong blizzard piled snow on roof and near house walls. its 60 out and garage door is disabled. (electrical because the blizzard is irrelevant to the problem. Disabled garage door during a warm 60 degree day is electrical)
+- roof is intact. Massive thunderstorm and water seeps in the house. (plumbing because the roof is intact, so water leakage is likely from pipes/plumbing)
+- I personally replaced my roof 10 years ago and did a wonderful job. There's water in my upstairs walls in the top corners, so I think the plumber did a poor job when they did the house. (roofing because water in the top corners of the upstairs walls implies a roofing issue even though the homeowner thinks it's not.)
+- The plumber came in the other day and fixed my sink. There is no water pressure even after I fixed it yesterday. (plumbing because even after 2 people fixed it, the issue remains.)
+- In my bedroom, why are the walls are leaking? It's been a dry summer. (plumbing because the water leakage is likely from internal pipes rather than the roof. Dry summer provides more context that it's not from the outside environment.)
+- There's a town-wide power outage. Is that causing my shower to not work? (plumbing because the power outage does not cause showers to fail)
+- The toilet runs continuously and now the main hallway light switch feels hot when I touch it. (electrical because while a running toilet is annoying and a plumbing issue, a hot switch is a severe fire hazard that requires immediate attention.)
+- My bathroom ceiling is leaking rusty water every time it rains. I'm furious because the plumber who fixed my sink last month clearly didn't seal the drain properly. (roofing because rain-dependent leaking points directly to a roof issue and the plumber's recent repairs are irrelevant to ceiling and weather issues.)
+
+Remember the rules for your response and follow all of the following rules:
+- Response MUST be one word. No sentences, phrases, special characters and punctuation.
+- Response MUST ONLY be one of the following words: electrical, plumbing, roofing
+- Consider the homeowner's request/issue/complaint and choose the category based on the most logical service out of electrical, plumbing, or roofing.
+
+Query: {query}
